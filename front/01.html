@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DT</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/front.css">
+  </head>
+  <body>
+    <header>
+      <h1>DT</h1>
+    </header>
+    <div class="manu">
+      <a href="../pp.php" id="a" class="side">포트폴리오</a>
+      <a href="../li.php" id="b" class="side">참여안내</a>
+      <a href="../join.php" id="c" class="side" style="background-color:#0f66de;color:white;">참여신청</a>
+      <a href="mailto:sangho5987@gmail.com" id="d" class="side">질문/제보</a>
+    </div>
+    <div class="main" style="width:75%;">
+        <div>
+          <div id="pc">
+            <p class="p">이용약관</p>
+            <div class="pc">
+              <p>팀DT(이하'팀') 팀원분들의 개인정보를 중요시하며, '정보통신망 이용촉진 및 정보보호'에 관한 법률을
+                준수하고 있습니다.</p>
+              <p>-이에 따라 팀은 개인정보 수집 및 이용에 대한 아래 조항을 안내할 예정입니다.</p>
+              <p>-아래 내용을 거부할 권리가 있습니다.</p>
+              <p>-개인정보 취급 방침의 순서는 다음과 같습니다.</p>
+              <br>
+              <p>1.개인정보 수집 항목</p>
+              <p>2.개인정보 수집 및 이용 목적</p>
+              <p>3.개인정보 보유,이용기간</p>
+              <p>4.개인정보 제 3자 제공 동의</p>
+            </div>
+            <p class="p">1.개인정보 수집 항목</p>
+            <div class="pc">
+              <p>-수집 항목:학번,이름,생년월일,전화번호,이메일,ipa(Internet Protocol address)</p>
+              <p>-개인정보 수집 방법:홈페이지(02.php,join_pr.php)</p>
+            </div>
+            <p class="p">2.개인정보 수집 및 이용 목적</p>
+            <div class="pc">
+              <p>-수집 목적:본인 특정</p>
+            </div>
+            <p class="p">3.개인정보 보유,이용기간</p>
+            <div class="pc">
+            <p>-개인정보 보유,이용기간:2021년 1월 1일 오후 12시까지</p>
+            </div>
+            <p class="p">4.개인정보 제 3자 제공 동의</p>
+            <div class="pc">
+              <p>-제공 받는자:인천 가현중학교</p>
+              <p>-제공 목적:본인 특정 및 동아리 처리</p>
+              <p>-개인정보 보유,이용기간:2021년 1월 1일 오후 12시까지</p>
+              <p>-제공 항목:학번,이름</p>
+            </div>
+        </div>
+        <input type="checkbox" id="dong">
+        <label for="dong">상기 개인정보 취급 및 이용에 관한 내용을 읽었으며, 동의합니다.</label>
+        <br>
+        <a href="02.html" id="btn">다음</a>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    let btn = $('#btn');
+    $(document).ready(function(){
+      $("#dong").change(function(){
+      if($("#dong").is(":checked")){
+        btn.css("display","block");
+      }else{
+        btn.css("display","none");
+      }
+  });
+  });
+    </script>
+  </body>
+</html>

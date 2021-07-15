@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DT</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/front.css">
+  </head>
+  <body>
+    <header>
+      <h1>DT</h1>
+    </header>
+    <div class="manu">
+      <a href="../pp.html" id="a" class="side">포트폴리오</a>
+      <a href="../li.html" id="b" class="side">참여안내</a>
+      <a href="../join.html" id="c" class="side" style="background-color:#0f66de;color:white;">참여신청</a>
+      <a href="mailto:sangho5987@gmail.com" id="d" class="side">질문/제보</a>
+    </div>
+    <div class="main" style="width:75%;">
+      <h2 style="margin-bottom:25px;">신청하기</h2>
+      <div class="rem">
+        <form action="02.html" method="post">
+          <p>Name (이름)</p>
+          <input type="text" name="name" placeholder="이름" maxlength="5" class="form">
+          <p>Student ID (학번)</p>
+          <input type="number" name="sc" placeholder="학번" class="form">
+          <p>Phone number (전화번호)</p>
+          <input type="tel" name="tel" placeholder="전화번호" class="form">
+          <p>Mail (메일)</p>
+          <input type="email" name="gm" placeholder="메일" class="form">
+          <p>Date of birth (생년월일)</p>
+          <input type="date" name="age" id="n" onchange="nn(document.getElementById('n').value)" class="form">
+          <input type="submit" value="완료" class="form sbit">
+        </form>
+      </div>
+    </div>
+    <script>
+      function nn(n) {
+        alert("이 기능은 html가 지원되는 사이트에서 실행됩니다");
+      }
+    </script>
+  </body>
+</html>
